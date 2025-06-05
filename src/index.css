@@ -33,7 +33,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   width: 500px;
-  height: 400px;
+  height: 420px;
   border-radius: 12px;
   margin-top: 25vh;
 }
@@ -62,10 +62,11 @@ button {
   color: black;
   font-size: 20px;
   border: 2.5px solid rgb(0, 0, 0);
-  padding: 15px;
+  padding: 12px;
   border-radius: 20px;
   font-family: 'Cherry Bomb One';
   font-size: 25px;
+  order: 1;
 }
 
 button:hover {
@@ -80,4 +81,16 @@ button:hover {
   padding: 10px;
   font-size: 20px;
   margin-top: 5%;
+  order: 3;
+}
+
+#down {
+  background-color: oklch(50 100 190);
+  color: black;
+  font-family: 'Edu SA Hand';
+  font-weight: bold;
+  padding: 11px;
+  font-size: 21px;
+  margin-top: 5%;
+  order: 2;
 }
