@@ -57,7 +57,6 @@ span {
 }
 
 button {
-  background-color: transparent;
   color: white;
   background-color: rgb(168, 80, 231);
   color: black;
@@ -72,4 +71,13 @@ button {
 button:hover {
   cursor: pointer;
   background-color: rgb(150, 43, 226);
+}
+
+#reset {
+  background-color: oklch(0 0 0);
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 5%;
 }
