@@ -22,6 +22,9 @@ export function Contador() {
     }
 
     function handleDecrement() {
+      if (click < 1) {
+        return;
+      }
       setClick(click - 1);
     }
 
