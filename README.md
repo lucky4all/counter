@@ -91,6 +91,7 @@ En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 * **HTML5**
 * **CSS3**
 * **JavaScript (ES6+)**
+* **TailwindCSS 4.1.8**
 
 ---
 
