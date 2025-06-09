@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+  background-image: url("public/desktop-back.gif");
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url("public/phone-back.gif");
+  }
+}
+
+#reset:hover{animation:shadow-drop-center-one 0.1s linear both} @keyframes shadow-drop-center-one{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgb(129, 114, 114)}}
+
+#down:hover{animation:shadow-drop-center-two 0.1s linear both} @keyframes shadow-drop-center-two{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(255, 0, 166, 0.945)}}
+
+#up:hover{animation:shadow-drop-center-three 0.1s linear both} @keyframes shadow-drop-center-three{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgb(121, 0, 137)}}
+
+#clicker > h1 {
+  text-shadow: 3px 3px 5px rgb(198, 139, 240);
+}
