@@ -1,97 +1,23 @@
-:root {
-  --border-state: linear-gradient(to bottom, red, blue);
-}
-
-@keyframes rewind {
-  from {
-    color: rgb(187, 0, 255);
-  }
-  to {
-    color: rgb(119, 0, 255);
-  }
-}
+@import "tailwindcss";
 
 
 body {
-  background-image: url("../fondo.png");
-  color: white;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-family: 'Jersey 15';
-  font-size: larger;
+  background-image: url("public/desktop-back.gif");
+  background-size: cover;
 }
 
-#clicker {
-  display: flex;
-  border: 2px solid rgb(144, 0, 255);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 500px;
-  height: 420px;
-  border-radius: 12px;
-  margin-top: 25vh;
+@media (max-width: 600px) {
+  body {
+    background-image: url("public/phone-back.gif");
+  }
 }
 
-h1 {
-  text-align: center;
-}
+#reset:hover{animation:shadow-drop-center-one 0.1s linear both} @keyframes shadow-drop-center-one{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgb(129, 114, 114)}}
 
-h2 {
-  text-shadow: 2px 2px 2px rgb(140, 0, 255);
-}
+#down:hover{animation:shadow-drop-center-two 0.1s linear both} @keyframes shadow-drop-center-two{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(255, 0, 166, 0.945)}}
 
-span {
-  color: red;
-  animation-name: rewind;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  text-align: center;
-  text-decoration: underline;
-}
+#up:hover{animation:shadow-drop-center-three 0.1s linear both} @keyframes shadow-drop-center-three{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgb(121, 0, 137)}}
 
-button {
-  color: white;
-  background-color: rgb(168, 80, 231);
-  color: black;
-  font-size: 20px;
-  border: 2.5px solid rgb(0, 0, 0);
-  padding: 12px;
-  border-radius: 20px;
-  font-family: 'Cherry Bomb One';
-  font-size: 25px;
-  order: 1;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: rgb(150, 43, 226);
-}
-
-#reset {
-  background-color: oklch(0 0 0);
-  color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
-  font-size: 20px;
-  margin-top: 5%;
-  order: 3;
-}
-
-#down {
-  background-color: oklch(50 100 190);
-  color: black;
-  font-family: 'Edu SA Hand';
-  font-weight: bold;
-  padding: 11px;
-  font-size: 21px;
-  margin-top: 5%;
-  order: 2;
+#clicker > h1 {
+  text-shadow: 3px 3px 5px rgb(198, 139, 240);
 }
