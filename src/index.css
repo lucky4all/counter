@@ -2,13 +2,13 @@
 
 
 body {
-  background-image: url("public/desktop-back.gif");
+  background-image: url("../public/desktop-back.gif");
   background-size: cover;
 }
 
 @media (max-width: 600px) {
   body {
-    background-image: url("public/phone-back.gif");
+    background-image: url("../public/phone-back.gif");
   }
 }
 
