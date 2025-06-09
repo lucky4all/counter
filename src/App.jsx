@@ -11,6 +11,7 @@ export function Main() {
   )
 }
 
+
 export function Contador() {
     const [click, setClick] = useState(0);
     function handleClick() {
